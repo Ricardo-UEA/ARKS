@@ -41,7 +41,7 @@ CAMISIM-based synthetic metagenome benchmarking.
 
 ## Dependencies
 
-Snakemake, BCALM2, Jellyfish, KrakenUniq/Kraken2, BBTools (BBDuk), CAMISIM, DuckDB, Singularity, SLURM (developed on the Ada HPC cluster).
+Snakemake, BCALM2, Jellyfish, KrakenUniq/Kraken2, BBTools (BBDuk), CAMISIM, DuckDB, Singularity, SLURM (developed on the Ada/Hali HPC cluster).
 
 ## Data & outputs
 
