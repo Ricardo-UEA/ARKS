@@ -1,12 +1,12 @@
 # ARKS
 
-Ancestry-Representative K-mer Set — a contamination-screened, multi-ancestry pan-genome k-mer database for host-read depletion in clinical metagenomics. This repository contains the pipeline and analysis code used to build and benchmark ARKS.
+Ancestry-Representative K-mer Set - a contamination-screened, multi-ancestry pan-genome k-mer database for host-read depletion in clinical metagenomics. This repository contains the pipeline and analysis code used to build and benchmark ARKS.
 
 ## Overview
 
-ARKS integrates human reference datasets — GRCh37, GRCh38, T2T-CHM13+Y, pan-genome assemblies for African, Arab, Chinese, and Khoe-San populations, an additional pan-genome reference, and IPD-IMGT/HLA — into a single k-mer database, screened for microbial contamination and benchmarked against single-reference depletion (GRCh38/T2T) using both CAMISIM synthetic metagenomes and direct read-depletion comparisons.
+ARKS integrates human reference datasets - GRCh37, GRCh38, T2T-CHM13+Y, pan-genome assemblies for African, Arab, Chinese, and Khoe-San populations, an additional pan-genome reference, and IPD-IMGT/HLA - into a single k-mer database, screened for microbial contamination and benchmarked against single-reference depletion (GRCh38/T2T) using both CAMISIM synthetic metagenomes and direct read-depletion comparisons.
 
-This repository holds **code only**. Raw sequence data, intermediate assemblies, and pipeline outputs are not included — see [Data & outputs](#data--outputs).
+This repository holds **code only**. Raw sequence data, intermediate assemblies, and pipeline outputs are not included - see [Data & outputs](#data--outputs).
 
 ## Repository structure
 
@@ -30,8 +30,8 @@ Host-depletion benchmarking: BBDuk depletion runs comparing ARKS, T2T, and the l
 
 ### `simulations/`
 CAMISIM-based synthetic metagenome benchmarking.
-- **`simulations/CAMISIM/`** — vendored copy of [CAMISIM](https://github.com/CAMI-challenge/CAMISIM) (legacy Python standalone, pre-2.0/Nextflow). Third-party code — see [Third-party code](#third-party-code).
-- **`simulations/CAMISIM/meta_simulations_2026_v2/`** — our own simulation run built on top of CAMISIM: config generation (`generate_camisim_configs.py`), BBDuk depletion, Kraken classification, read-count/assembly evaluation, and ground-truth summary generation. This is the CAMISIM benchmarking pipeline reported in the paper.
+- **`simulations/CAMISIM/`** - vendored copy of [CAMISIM](https://github.com/CAMI-challenge/CAMISIM) (legacy Python standalone, pre-2.0/Nextflow). Third-party code - see [Third-party code](#third-party-code).
+- **`simulations/CAMISIM/meta_simulations_2026_v2/`** - our own simulation run built on top of CAMISIM: config generation (`generate_camisim_configs.py`), BBDuk depletion, Kraken classification, read-count/assembly evaluation, and ground-truth summary generation. This is the CAMISIM benchmarking pipeline reported in the paper.
 
 ## Third-party code
 
@@ -45,11 +45,11 @@ Snakemake, BCALM2, Jellyfish, KrakenUniq/Kraken2, BBTools (BBDuk), CAMISIM, Duck
 
 ## Data & outputs
 
-This repository tracks scripts only. Within each folder, subdirectories such as `output_files/`, `filtered_assembly/`, `input_files/`, `kraken_reports/`, `stats_files/`, `job_errors/`, and `.snakemake/` hold generated data, intermediate assemblies, and logs on the working copy — only the script files from these subdirectories are included here. The ARKS k-mer database and raw sequencing data are available at [Zenodo DOI — TBD] / on request.
+This repository tracks scripts only. Within each folder, subdirectories such as `output_files/`, `filtered_assembly/`, `input_files/`, `kraken_reports/`, `stats_files/`, `job_errors/`, and `.snakemake/` hold generated data, intermediate assemblies, and logs on the working copy - only the script files from these subdirectories are included here. The ARKS k-mer database and raw sequencing data are available at [Zenodo DOI - TBD] / on request.
 
 ## Citation
 
 If you use this pipeline or the ARKS database, please cite:
 
-> [Citation — TBD pending publication]
+> [Citation - TBD pending publication]
 
