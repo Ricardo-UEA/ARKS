@@ -53,6 +53,3 @@ If you use this pipeline or the ARKS database, please cite:
 
 > [Citation — TBD pending publication]
 
-## License
-
-MIT (see `LICENSE`), except for vendored code under `simulations/CAMISIM/` (Apache-2.0 — see [Third-party code](#third-party-code)).
